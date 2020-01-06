@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+src_dir="./src"
+cache_dir="__pycache__"
+python="python3"
+
+usage () {
+    echo "Commands: test, run, clean"
+}
+
+if [ -n "${1+x}" ]; then
+    case "$1" in
+        "test")
+            echo ">> Running tests <<"
+            $python -m unittest
+            ;;
+        "run")
+            echo ">> Running app <<"
+            $python $src_dir/main.py
+            ;;
+        "clean")
+            echo ">> Cleaning cache <<"
+            if [ $(find . -name $cache_dir -type d | wc -l) -ne 0 ]; then
+                find . -name $cache_dir -type d -exec rm -rf {} +
+            fi
+            echo "Removed $cache_dir"
+            ;;
+        *)
+            usage
+            ;;
+    esac
+else
+    usage
+fi
