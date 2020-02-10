@@ -1,5 +1,5 @@
 import common.constants as const
-from example.HelloWorld import HelloWorld
+from HelloWorld import HelloWorld
 
 def main ():
 
