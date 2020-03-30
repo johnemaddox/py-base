@@ -1,3 +1,11 @@
+'''
+Hello World
+
+Use this as a template.
+
+@author John E Maddox
+
+'''
 
 class HelloWorld ():
     '''
