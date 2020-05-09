@@ -1,4 +1,8 @@
 #!/bin/bash
 
-# Remove __pycache__ directories
-find . -name __pycache__ -type d -print0 | xargs -0 rm -r --
+target="__pycache__"
+
+if [ $(find . -name $target -type d | wc -l) -ne 0 ]
+then
+    find . -name $target -type d -delete
+fi
