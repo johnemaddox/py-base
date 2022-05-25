@@ -5,7 +5,8 @@ src_dir="./src"
 cache_dir="__pycache__"
 python="python3"
 
-usage () {
+usage()
+{
     echo "Commands: test, run, clean"
 }
 

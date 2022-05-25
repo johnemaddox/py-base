@@ -7,16 +7,16 @@ Use this as a template.
 
 '''
 
-class HelloWorld ():
+class HelloWorld():
     '''
     Hello world example
     '''
 
-    def __init__ (self, _msg):
+    def __init__(self, _msg):
         self.msg = _msg
 
 
-    def get_msg (self):
+    def get_msg(self):
         '''
         Return the message set in init.
         '''
@@ -24,5 +24,5 @@ class HelloWorld ():
 
 
 if __name__ == "__main__":
-    hw = Hello_world('Test')
+    hw = HelloWorld('Test')
     print(hw.get_msg())

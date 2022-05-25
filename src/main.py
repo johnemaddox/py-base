@@ -1,7 +1,7 @@
 from constants import *
 from hello_world import HelloWorld
 
-def main ():
+def main():
 
     hw = HelloWorld(HELLO_WORLD)
     print(hw.get_msg())
