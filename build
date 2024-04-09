@@ -14,7 +14,7 @@ if [ -n "${1+x}" ]; then
     case "$1" in
         "test")
             echo ">> Running tests <<"
-            $python -m unittest
+            $python -m unittest -v
             ;;
         "run")
             echo ">> Running app <<"
