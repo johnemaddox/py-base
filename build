@@ -7,7 +7,9 @@ python="python3"
 
 usage()
 {
-    echo "Commands: test, run, clean"
+    echo "##############################"
+    echo "# Commands: test, run, clean #"
+    echo "##############################"
 }
 
 if [ -n "${1+x}" ]; then
